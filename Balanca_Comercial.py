@@ -34,10 +34,10 @@ def load_data(caminho):
 
 # Carregar e armazenar dados no session_state se ainda não estiverem lá
 if "df_exportacao" not in st.session_state:
-    st.session_state["df_exportacao"] = load_data('dados\df_exp.parquet')
+    st.session_state["df_exportacao"] = load_data('dados/df_exp.parquet')
 
 if 'df_importacao' not in st.session_state:
-    st.session_state['df_importacao'] = load_data('dados\df_imp.parquet')
+    st.session_state['df_importacao'] = load_data('dados/df_imp.parquet')
 
 # Acessar os dados do session_state
 df_exp = st.session_state["df_exportacao"]
